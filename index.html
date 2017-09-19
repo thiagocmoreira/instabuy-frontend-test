@@ -8,10 +8,34 @@
     <link rel="stylesheet" type="text/css" href="./css/semantic-ui/semantic.min.css">
   </head>
   <body>
-    <h1>InstaBuy FrontEnd Test</h1>
+    <div class="ui grid container">
+      <div class="four wide column">
+        <div class="ui link cards">
+          <div class="card">
+            <div class="image">
+              <img class="label_image" src="">
+            </div>
+            <div class="content">
+              <div class="header label_name"></div>
+              <div class="meta">
+                <a class="label_brand"></a>
+              </div>
+              <div class="label_desc"></div>
+            </div>
+            <div class="extra content">
+              <span>
+                <i class="add to cart icon"></i>
+                <span class="label_price">75 Friends</span>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/jquery/jquery-3.2.1.min.js"></script>
     <script src="./js/semantic-ui/semantic.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./api/product.js"></script>
   </body>
 </html>
