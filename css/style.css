@@ -5,3 +5,12 @@
 .shop-icon {
   font-size: 25px !important;
 }
+
+.ui.orange.label.small.shop-label {
+  margin-left: -4px;
+}
+
+.label-product {
+  z-index: 10;
+  margin-left: -2px;
+}
