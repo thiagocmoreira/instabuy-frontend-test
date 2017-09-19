@@ -6,36 +6,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/semantic-ui/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
-    <div class="ui grid container">
-      <div class="four wide column">
-        <div class="ui link cards">
-          <div class="card">
-            <div class="image">
-              <img class="label_image" src="">
-            </div>
-            <div class="content">
-              <div class="header label_name"></div>
-              <div class="meta">
-                <a class="label_brand"></a>
-              </div>
-              <div class="label_desc"></div>
-            </div>
-            <div class="extra content">
-              <span>
-                <i class="add to cart icon"></i>
-                <span class="label_price">75 Friends</span>
-              </span>
-            </div>
+    <div class="ui grid container center aligned menu-initial">
+      <!-- Init Header -->
+      <header class="ui stackable top fixed menu inverted">
+        <div class="item">
+          <img src="./img/logo-white.png">
+        </div>
+        <div class="ui dropdown item">
+          Selecione por Sessão
+          <i class="dropdown icon"></i>
+          <div class="menu">
+            <div class="item" data-value="0">Frutas e Verduras</div>
+            <div class="item" data-value="1">Congelados</div>
+            <div class="item" data-value="2">Padaria</div>
+            <div class="item" data-value="3">Limpeza</div>
+            <div class="item" data-value="4">Bebidas</div>
+            <div class="item" data-value="5">Higiene e Beleza</div>
+            <div class="item" data-value="6">Importados</div>
           </div>
         </div>
-      </div>
+        <div class="right menu">
+          <div class="item">
+            <div class="ui transparent inverted icon input header-pad">
+              <i class="search icon"></i>
+              <input type="text" placeholder="Pesquisar Produto...">
+            </div>
+          </div>
+          <a class="item">
+            <i class="shop icon shop-icon" ></i>
+            <span>2</span>
+          </a>
+          <a class="item">
+              <i class="user icon shop-icon" ></i>
+              <span>Login</span>
+            </a>
+        </div>
+      </header><!-- End Header -->
+
+      <div class="ui link cards init">
+        <div class="card">
+          <div class="image">
+            <img class="label_image" src="">
+          </div>
+          <div class="content">
+            <div class="header label_name"></div>
+            <div class="meta">
+              <a class="label_brand"></a>
+            </div>
+            <div class="label_desc"></div>
+          </div>
+          <div class="extra content">
+            <span>
+              <i class="add to cart icon"></i>
+              <span class="label_price"></span>
+            </span>
+          </div>
+        </div>
+      </div>      
     </div>
 
     <script src="./js/jquery/jquery-3.2.1.min.js"></script>
     <script src="./js/semantic-ui/semantic.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./api/product.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
