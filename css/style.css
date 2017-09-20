@@ -1,4 +1,4 @@
-.init {
+.vertical-menu-pos {
   margin-top: 30px !important;
 }
 
@@ -6,7 +6,7 @@
   font-size: 25px !important;
 }
 
-.ui.orange.label.small.shop-label {
+.ui.orange.label.shop-label {
   margin-left: -4px;
 }
 
@@ -51,3 +51,18 @@
 .price:hover {
   color: #F2711C !important;
 }
+
+.ui.grid.center.aligned.pagination-pos {
+  padding: 40px 0;
+}
+
+footer.footer {
+  text-align: center;
+  margin-top: 70px;
+  border-top: 1px solid #E5E5E5;
+}
+
+ .ui.footer.segment {
+    margin: 5em 0em 0em;
+    padding: 5em 0em;
+  }
