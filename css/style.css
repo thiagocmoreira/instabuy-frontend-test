@@ -39,18 +39,15 @@
   color: #FFFFFF;
 }
 
-.fundo-azul {
-  background: blue;
-  height: 350px;
+.product-card {
   margin-bottom: 50px;
 }
 
-.fundo-vermelho {
-  background: red;
-  margin-bottom: 50px;
+.price {
+  font-size: 22px;
+  font-weight: bold;
 }
 
-.fundo-teste {
-  max-width: 1128px;
-  margin: 0 auto;
+.price:hover {
+  color: #F2711C !important;
 }

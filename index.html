@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/semantic-ui/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/flexboxgrid.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
@@ -102,7 +101,7 @@
                             Bebidas
                           </div>
                           <div class="item" data-value="limpeza">
-                            <div class="ui orange empty circular label"></div>
+                            <div class="ui green empty circular label"></div>
                             Limpeza
                           </div>
                           <div class="item" data-value="padaria">
@@ -114,7 +113,7 @@
                             Congelados
                           </div>
                           <div class="item" data-value="feira">
-                            <div class="ui green empty circular label"></div>
+                            <div class="ui orange empty circular label"></div>
                             Feira
                           </div>
                         </div>
@@ -213,21 +212,137 @@
 
         <div class="twelve wide column">
           <div class="ui three column grid">
-            <div class="column fundo-azul"></div>
-            <div class="column fundo-vermelho"></div>
-            <div class="column fundo-azul"></div>
-            <div class="column fundo-vermelho"></div>
-            <div class="column fundo-azul"></div>
-            <div class="column fundo-vermelho"></div>
-          </div>            
+            <div class="column">
+              <div class="ui special cards">
+                <div class="card">
+                  <div class="blurring dimmable image">
+                    <div class="ui dimmer">
+                      <div class="content">
+                        <div class="center">
+                          <div class="ui inverted button">
+                            <i class="shop icon"></i>
+                            Adicionar ao Carrinho
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui fluid image label-product">
+                      <div class="ui orange ribbon label">
+                        <i class="envira icon"></i>
+                        Feira
+                      </div>
+                    </div>
+                    <img src="https://www.thermofisher.com/blog/wp-content/uploads/2014/11/tomato.jpg">
+                  </div>
+                  <div class="content">
+                    <a class="header">Tomate (1 kg)-Orgânico</a>
+                    <div class="meta">
+                      <span class="date">Pomar Brasília</span>
+                    </div>
+                    <div class="description">
+                      <div class="ui rating" data-rating="4" data-max-rating="5"></div>
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <a class="price">R$ 14,90</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+                <div class="ui special cards">
+                  <div class="card">
+                    <div class="blurring dimmable image">
+                      <div class="ui dimmer">
+                        <div class="content">
+                          <div class="center">
+                            <div class="ui inverted button">
+                              <i class="shop icon"></i>
+                              Adicionar ao Carrinho
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="ui fluid image label-product">
+                        <div class="ui orange ribbon label">
+                          <i class="envira icon"></i>
+                          Feira
+                        </div>
+                      </div>
+                      <img src="https://www.thermofisher.com/blog/wp-content/uploads/2014/11/tomato.jpg">
+                    </div>
+                    <div class="content">
+                      <a class="header">Tomate (1 kg)-Orgânico</a>
+                      <div class="meta">
+                        <span class="date">Pomar Brasília</span>
+                      </div>
+                      <div class="description">
+                        <div class="ui rating" data-rating="4" data-max-rating="5"></div>
+                      </div>
+                    </div>
+                    <div class="extra content">
+                      <a class="price">R$ 14,90</a>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="column">
+              <div class="ui special cards">
+                <div class="card">
+                  <div class="blurring dimmable image">
+                    <div class="ui dimmer">
+                      <div class="content">
+                        <div class="center">
+                          <div class="ui inverted button">
+                            <i class="shop icon"></i>
+                            Adicionar ao Carrinho
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="ui fluid image label-product">
+                      <div class="ui orange ribbon label">
+                        <i class="envira icon"></i>
+                        Feira
+                      </div>
+                    </div>
+                    <img src="https://www.thermofisher.com/blog/wp-content/uploads/2014/11/tomato.jpg">
+                  </div>
+                  <div class="content">
+                    <a class="header">Tomate (1 kg)-Orgânico</a>
+                    <div class="meta">
+                      <span class="date">Pomar Brasília</span>
+                    </div>
+                    <div class="description">
+                      <div class="ui rating" data-rating="4" data-max-rating="5"></div>
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <a class="price">R$ 14,90</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column"></div>
+            <div class="column"></div>
+            <div class="column"></div>
+          </div>
+          
+          <div class="ui message">
+            <i class="close icon"></i>
+            <div class="header">
+              Observações
+            </div>
+            <p>Em decorrência de selecionarmos os melhores no dia da entrega, todos os nossos itens se encontram sujeitos a disponibilidade da colheita da semana.</p>
+          </div>
         </div>
       </div>
     </section>
 
     <script src="./js/jquery/jquery-3.2.1.min.js"></script>
     <script src="./js/semantic-ui/semantic.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./api/product.js"></script>
     <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- <script src="./api/product.js"></script> -->
   </body>
 </html>
