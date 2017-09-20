@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/semantic-ui/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/flexboxgrid.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
   </head>
   <body>
-    <div class="ui grid container center aligned menu-initial">
-      <!-- Init Header -->
-      <header class="ui stackable top fixed menu inverted">
+    <!-- Header -->
+    <header class="ui grid container center aligned menu-initial">
+      <div class="ui top fixed menu inverted"> <!-- stackable -->
         <div class="item">
           <img src="./img/logo-white.png">
         </div>
@@ -19,13 +20,13 @@
           Selecione por Sessão
           <i class="dropdown icon"></i>
           <div class="menu">
-            <div class="item" data-value="0">Frutas e Verduras</div>
+            <div class="item" data-value="0">Feira</div>
             <div class="item" data-value="1">Congelados</div>
             <div class="item" data-value="2">Padaria</div>
             <div class="item" data-value="3">Limpeza</div>
             <div class="item" data-value="4">Bebidas</div>
             <div class="item" data-value="5">Higiene e Beleza</div>
-            <div class="item" data-value="6">Importados</div>
+            <div class="item" data-value="6">Cereais e Grãos</div>
           </div>
         </div>
         <div class="right menu">
@@ -41,38 +42,187 @@
           </a>
           <a class="item">
               <i class="user icon shop-icon" ></i>
-              <span>Login</span>
+              <span>Entrar</span>
             </a>
         </div>
-      </header><!-- End Header -->
+      </div>
+    </header><!-- End Header -->
 
-      <div class="ui link cards init">
-        <div class="card">
-            <div class="ui fluid image label-product">
-              <div class="ui orange ribbon label">
-                <i class="envira icon"></i>
-                Verdura
+    <section>
+      <!-- H1 -->
+      <h1 class="ui header init center aligned header-products">Todos os Produtos</h1><!-- End H1 -->
+
+      <!-- BreadCrumb -->
+      <div class="ui grid container breadcrumb-products">
+        <div class="ui breadcrumb">
+          <a class="section">Início</a>
+          <i class="right chevron icon divider"></i>
+          <a class="section">Produtos</a>
+          <i class="right arrow icon divider"></i>
+          <div class="active section">Todos os Produtos</div>
+        </div>
+      </div><!-- End BreadCrumb -->
+
+      <!-- Vertical Menu -->
+      <div class="ui two column stackable grid container">
+        <div class="four wide column">
+          <div class="ui vertical menu inverted init">
+            <div class="item">
+              <div class="header">Sessão</div>
+              <div class="menu">
+                <div class="item">
+                    <div class="ui multiple dropdown ">
+                      <input type="hidden" name="filters" value="feira">
+                      <span class="text multiple-session">Filtrar Sessão</span>
+                      <div class="menu">
+                        <div class="ui icon search input">
+                          <i class="search icon"></i>
+                          <input type="text" placeholder="Procurar...">
+                        </div>
+                        <div class="divider"></div>
+                        <div class="header">
+                          <i class="tags icon"></i>
+                          Sessões
+                        </div>
+                        <div class="scrolling menu">
+                          <div class="item" data-value="organico">
+                            <div class="ui red empty circular label"></div>
+                            Cereais e Grãos
+                          </div>
+                          <div class="item" data-value="importados">
+                            <div class="ui blue empty circular label"></div>
+                            Importados
+                          </div>
+                          <div class="item" data-value="higiene">
+                            <div class="ui black empty circular label"></div>
+                            Higiene/Beleza
+                          </div>
+                          <div class="item" data-value="bebidas">
+                            <div class="ui purple empty circular label"></div>
+                            Bebidas
+                          </div>
+                          <div class="item" data-value="limpeza">
+                            <div class="ui orange empty circular label"></div>
+                            Limpeza
+                          </div>
+                          <div class="item" data-value="padaria">
+                            <div class="ui yellow empty circular label"></div>
+                            Padaria
+                          </div>
+                          <div class="item" data-value="congelados">
+                            <div class="ui pink empty circular label"></div>
+                            Congelados
+                          </div>
+                          <div class="item" data-value="feira">
+                            <div class="ui green empty circular label"></div>
+                            Feira
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
               </div>
             </div>
-          <div class="image">
-            <img class="label_image" src="">
-          </div>
-          <div class="content">
-            <div class="header label_name"></div>
-            <div class="meta">
-              <a class="label_brand"></a>
+            <div class="item">
+              <div class="header">Faixa de Preço</div>
+              <div class="menu">
+                <a class="item">
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label class="checkbox-color">Menos de R$ 10</label>
+                  </div>
+                </a>
+                <a class="item">
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label class="checkbox-color">R$ 11 - R$ 100</label>
+                  </div>
+                </a>
+                <a class="item">
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label class="checkbox-color">R$ 100 ou Mais</label>
+                  </div>
+                </a>
+              </div>
             </div>
-            <div class="label_desc"></div>
+            <div class="item">
+                <div class="header">Marca</div>
+                <div class="menu">
+                  <div class="item">
+                      <div class="ui multiple dropdown">
+                        <input type="hidden" name="filters" value="pomar-brasilia,organomix">
+                        <span class="text multiple-session">Filtrar Marca</span>
+                        <div class="menu">
+                          <div class="ui icon search input">
+                            <i class="search icon"></i>
+                            <input type="text" placeholder="Procurar...">
+                          </div>
+                          <div class="divider"></div>
+                          <div class="header">
+                            <i class="tags icon"></i>
+                            Marca
+                          </div>
+                          <div class="scrolling menu">
+                            <div class="item" data-value="pomar-brasilia">
+                              Pomar Brasília
+                            </div>
+                            <div class="item" data-value="organomix">
+                              Organomix
+                            </div>
+                            <div class="item" data-value="grupo-pomar">
+                              Grupo Pomar
+                            </div>
+                            <div class="item" data-value="hortifruti">
+                              Hortifruti
+                            </div>
+                            <div class="item" data-value="jasmine">
+                              Jasmine
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+            <div class="item">
+              <div class="header">Peso</div>
+              <div class="menu">
+                <a class="item">
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label class="checkbox-color">Abaixo de 500mg</label>
+                  </div>
+                </a>
+                <a class="item">
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label class="checkbox-color">500mg - 1kg</label>
+                  </div>
+                </a>
+                <a class="item">
+                  <div class="ui checkbox">
+                    <input type="checkbox" name="example">
+                    <label class="checkbox-color">Acima de 1kg</label>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="extra content">
-            <span>
-              <i class="add to cart icon"></i>
-              <span class="label_price"></span>
-            </span>
-          </div>
+        </div> <!-- End Vertical Menu -->
+
+        <div class="twelve wide column">
+          <div class="ui three column grid">
+            <div class="column fundo-azul"></div>
+            <div class="column fundo-vermelho"></div>
+            <div class="column fundo-azul"></div>
+            <div class="column fundo-vermelho"></div>
+            <div class="column fundo-azul"></div>
+            <div class="column fundo-vermelho"></div>
+          </div>            
         </div>
-      </div>      
-    </div>
+      </div>
+    </section>
 
     <script src="./js/jquery/jquery-3.2.1.min.js"></script>
     <script src="./js/semantic-ui/semantic.min.js"></script>

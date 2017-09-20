@@ -1,5 +1,5 @@
 .init {
-  margin-top: 100px !important;
+  margin-top: 30px !important;
 }
 
 .shop-icon {
@@ -13,4 +13,44 @@
 .label-product {
   z-index: 10;
   margin-left: -2px;
+}
+
+.header-products {
+  margin-top: 130px !important;
+}
+
+.filter-checkbox {
+  color: #FFFFFF !important;
+}
+
+.breadcrumb-products {
+  margin-top: 25px !important;
+}
+
+.multiple-session {
+  margin-left: -3px !important;
+}
+
+.ui.checkbox .checkbox-color {
+  color: #8D8D8E;
+}
+
+.ui.checkbox .checkbox-color:hover {
+  color: #FFFFFF;
+}
+
+.fundo-azul {
+  background: blue;
+  height: 350px;
+  margin-bottom: 50px;
+}
+
+.fundo-vermelho {
+  background: red;
+  margin-bottom: 50px;
+}
+
+.fundo-teste {
+  max-width: 1128px;
+  margin: 0 auto;
 }
