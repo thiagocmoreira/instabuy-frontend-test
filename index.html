@@ -11,7 +11,7 @@
   <body>
     <!-- Header -->
     <header class="ui grid container center aligned menu-initial">
-      <div class="ui top fixed menu inverted"> <!-- stackable -->
+      <div class="ui top fixed menu inverted">
         <div class="item">
           <img src="./img/logo-white.png">
         </div>
@@ -62,65 +62,69 @@
         </div>
       </div><!-- End BreadCrumb -->
 
+      <!-- Grid -->
       <div class="ui two column stackable grid container">
+        <!-- Vertical Menu -->
         <div class="four wide column">
           <div class="ui vertical menu inverted vertical-menu-pos">
             <div class="item">
               <div class="header">Sessão</div>
               <div class="menu">
+                <!-- Weight Tab -->
                 <div class="item">
-                    <div class="ui multiple dropdown ">
-                      <input type="hidden" name="filters" value="feira">
-                      <span class="text multiple-session">Filtrar Sessão</span>
-                      <div class="menu">
-                        <div class="ui icon search input">
-                          <i class="search icon"></i>
-                          <input type="text" placeholder="Procurar...">
+                  <div class="ui multiple dropdown ">
+                    <input type="hidden" name="filters" value="feira">
+                    <span class="text multiple-session">Filtrar Sessão</span>
+                    <div class="menu">
+                      <div class="ui icon search input">
+                        <i class="search icon"></i>
+                        <input type="text" placeholder="Procurar...">
+                      </div>
+                      <div class="divider"></div>
+                      <div class="header">
+                        <i class="tags icon"></i>
+                        Sessões
+                      </div>
+                      <div class="scrolling menu">
+                        <div class="item" data-value="organico">
+                          <div class="ui red empty circular label"></div>
+                          Cereais e Grãos
                         </div>
-                        <div class="divider"></div>
-                        <div class="header">
-                          <i class="tags icon"></i>
-                          Sessões
+                        <div class="item" data-value="importados">
+                          <div class="ui blue empty circular label"></div>
+                          Importados
                         </div>
-                        <div class="scrolling menu">
-                          <div class="item" data-value="organico">
-                            <div class="ui red empty circular label"></div>
-                            Cereais e Grãos
-                          </div>
-                          <div class="item" data-value="importados">
-                            <div class="ui blue empty circular label"></div>
-                            Importados
-                          </div>
-                          <div class="item" data-value="higiene">
-                            <div class="ui black empty circular label"></div>
-                            Higiene/Beleza
-                          </div>
-                          <div class="item" data-value="bebidas">
-                            <div class="ui purple empty circular label"></div>
-                            Bebidas
-                          </div>
-                          <div class="item" data-value="limpeza">
-                            <div class="ui green empty circular label"></div>
-                            Limpeza
-                          </div>
-                          <div class="item" data-value="padaria">
-                            <div class="ui yellow empty circular label"></div>
-                            Padaria
-                          </div>
-                          <div class="item" data-value="congelados">
-                            <div class="ui pink empty circular label"></div>
-                            Congelados
-                          </div>
-                          <div class="item" data-value="feira">
-                            <div class="ui green empty circular label"></div>
-                            Feira
-                          </div>
+                        <div class="item" data-value="higiene">
+                          <div class="ui black empty circular label"></div>
+                          Higiene/Beleza
+                        </div>
+                        <div class="item" data-value="bebidas">
+                          <div class="ui purple empty circular label"></div>
+                          Bebidas
+                        </div>
+                        <div class="item" data-value="limpeza">
+                          <div class="ui green empty circular label"></div>
+                          Limpeza
+                        </div>
+                        <div class="item" data-value="padaria">
+                          <div class="ui yellow empty circular label"></div>
+                          Padaria
+                        </div>
+                        <div class="item" data-value="congelados">
+                          <div class="ui pink empty circular label"></div>
+                          Congelados
+                        </div>
+                        <div class="item" data-value="feira">
+                          <div class="ui green empty circular label"></div>
+                          Feira
                         </div>
                       </div>
                     </div>
+                  </div>
                 </div>
               </div>
             </div>
+            <!-- Price Tab -->
             <div class="item">
               <div class="header">Faixa de Preço</div>
               <div class="menu">
@@ -143,84 +147,88 @@
                   </div>
                 </a>
               </div>
-            </div>
+            </div> <!-- End Price Tab -->
+            <!-- Brand Tab -->
             <div class="item">
-                <div class="header">Marca</div>
-                <div class="menu">
-                  <div class="item">
-                      <div class="ui multiple dropdown">
-                        <input type="hidden" name="filters" value="pomar-brasilia,organomix">
-                        <span class="text multiple-session">Filtrar Marca</span>
-                        <div class="menu">
-                          <div class="ui icon search input">
-                            <i class="search icon"></i>
-                            <input type="text" placeholder="Procurar...">
-                          </div>
-                          <div class="divider"></div>
-                          <div class="header">
-                            <i class="tags icon"></i>
-                            Marca
-                          </div>
-                          <div class="scrolling menu">
-                            <div class="item" data-value="pomar-brasilia">
-                              Pomar Brasília
-                            </div>
-                            <div class="item" data-value="organomix">
-                              Organomix
-                            </div>
-                            <div class="item" data-value="grupo-pomar">
-                              Grupo Pomar
-                            </div>
-                            <div class="item" data-value="hortifruti">
-                              Hortifruti
-                            </div>
-                            <div class="item" data-value="jasmine">
-                              Jasmine
-                            </div>
-                          </div>
+              <div class="header">Marca</div>
+              <div class="menu">
+                <div class="item">
+                  <div class="ui multiple dropdown">
+                    <input type="hidden" name="filters" value="pomar-brasilia">
+                    <span class="text multiple-session">Filtrar Marca</span>
+                    <div class="menu">
+                      <div class="ui icon search input">
+                        <i class="search icon"></i>
+                        <input type="text" placeholder="Procurar...">
+                      </div>
+                      <div class="divider"></div>
+                      <div class="header">
+                        <i class="tags icon"></i>
+                        Marca
+                      </div>
+                      <div class="scrolling menu">
+                        <div class="item" data-value="pomar-brasilia">
+                          Pomar Brasília
+                        </div>
+                        <div class="item" data-value="organomix">
+                          Organomix
+                        </div>
+                        <div class="item" data-value="grupo-pomar">
+                          Grupo Pomar
+                        </div>
+                        <div class="item" data-value="hortifruti">
+                          Hortifruti
+                        </div>
+                        <div class="item" data-value="jasmine">
+                          Jasmine
                         </div>
                       </div>
+                    </div>
                   </div>
                 </div>
-            </div>
-            <div class="item">
-              <div class="header">Peso</div>
-              <div class="menu">
-                <a class="item">
-                  <div class="ui checkbox">
-                    <input type="checkbox" name="example">
-                    <label class="checkbox-color">Abaixo de 500mg</label>
-                  </div>
-                </a>
-                <a class="item">
-                  <div class="ui checkbox">
-                    <input type="checkbox" name="example">
-                    <label class="checkbox-color">500mg - 1kg</label>
-                  </div>
-                </a>
-                <a class="item">
-                  <div class="ui checkbox">
-                    <input type="checkbox" name="example">
-                    <label class="checkbox-color">Acima de 1kg</label>
-                  </div>
-                </a>
               </div>
             </div>
-          </div>
-        </div> <!-- End Vertical Menu -->
+          <!-- Weight Tab -->
+          <div class="item">
+            <div class="header">Peso</div>
+            <div class="menu">
+              <a class="item">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label class="checkbox-color">Abaixo de 500mg</label>
+                </div>
+              </a>
+              <a class="item">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label class="checkbox-color">500mg - 1kg</label>
+                </div>
+              </a>
+              <a class="item">
+                <div class="ui checkbox">
+                  <input type="checkbox" name="example">
+                  <label class="checkbox-color">Acima de 1kg</label>
+                </div>
+              </a>
+            </div>
+          </div> <!-- End Weight Tab -->
+        </div>
+      </div> <!-- End Vertical Menu -->
 
-        <div class="twelve wide column">
-          <div class="ui three column grid products">           
-          
+      <div class="twelve wide column">
+        <div class="ui three column grid products">          
           <!-- Message -->
           <div class="ui message">
             <i class="close icon"></i>
             <div class="header">Observações</div>
             <p>Em decorrência de selecionarmos os melhores no dia da entrega, todos os nossos itens se encontram sujeitos a disponibilidade da colheita da semana.</p>
           </div> <!-- End Message -->
-      </div>
+          <!-- Cards with products are created here -->
+        </div>
+      </div> <!-- End Grid -->
     </section>
 
+  <!-- Pagination -->
     <div class="ui grid center aligned pagination-pos">
       <div class="sixteen wide column">
         <div class="ui pagination menu">
@@ -231,21 +239,26 @@
           <a class="item">12</a>
         </div>
       </div>
-    </div>
+    </div> <!-- End Pagination -->
 
-    <div class="ui inverted vertical footer segment">
+    <!-- Footer -->
+    <footer class="ui inverted vertical footer segment">
       <div class="ui center aligned container">
         <img src="./img/logo-white.png" class="ui centered mini image">
         <div class="ui horizontal inverted small divided link list">
-          <span>Desenvolvido por <a class="item" target="_blank" href="http://github.com/thiagocmoreira">Thiago Moreira</a></span>
+          <span>
+            Desenvolvido por <a class="item" target="_blank" href="http://github.com/thiagocmoreira">Thiago Moreira</a>
+          </span>
         </div>
       </div>
-    </div>
+    </footer> <!-- End Footer -->
 
+    <!-- Import scripts -->
     <script src="./js/jquery/jquery-3.2.1.min.js"></script>
     <script src="./js/semantic-ui/semantic.min.js"></script>
     <script src="./js/main.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="./api/product.js"></script>
+    <script src="./js/product.js"></script> <!-- End Import -->
   </body>
 </html>

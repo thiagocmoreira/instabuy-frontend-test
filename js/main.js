@@ -1,13 +1,9 @@
+// Dropdown animation
+
 $('.ui.dropdown')
   .dropdown()
 
-$('.special.cards .image')
-  .dimmer({
-    on: 'hover'
-  })
-
-$('.ui.rating')
-  .rating()
+// Message animation
 
 $('.message .close')
   .on('click', function() {
