@@ -15,7 +15,7 @@
         <div class="item">
           <img src="./img/logo-white.png">
         </div>
-        <div class="ui dropdown item">
+        <div class="ui dropdown item dropdown-menu">
           Selecione por Sessão
           <i class="dropdown icon"></i>
           <div class="menu">
@@ -29,19 +29,19 @@
           </div>
         </div>
         <div class="right menu">
-          <div class="item">
+          <div class="item search-menu">
             <div class="ui transparent inverted icon input header-pad">
               <i class="search icon"></i>
-              <input type="text" placeholder="Pesquisar Produto...">
+              <input type="text" class="place-search" placeholder="Pesquisar Produto...">
             </div>
           </div>
           <a class="item">
             <i class="shop icon shop-icon" ></i>
             <span class="ui orange circular label shop-label">2</span>
           </a>
-          <a class="item">
+          <a class="item login-item">
             <i class="user icon shop-icon" ></i>
-            <span>Entrar</span>
+            <span class="login-name">Entrar</span>
           </a>
         </div>
       </div>
@@ -63,7 +63,7 @@
       </div><!-- End BreadCrumb -->
 
       <!-- Grid -->
-      <div class="ui two column stackable grid container">
+      <div class="ui two column stackable grid container mobile reversed">
         <!-- Vertical Menu -->
         <div class="four wide column">
           <div class="ui vertical menu inverted vertical-menu-pos">
@@ -74,6 +74,7 @@
                 <div class="item">
                   <div class="ui multiple dropdown ">
                     <input type="hidden" name="filters" value="feira">
+                    <i class="dropdown icon icon-filter"></i>
                     <span class="text multiple-session">Filtrar Sessão</span>
                     <div class="menu">
                       <div class="ui icon search input">
@@ -103,7 +104,7 @@
                           Bebidas
                         </div>
                         <div class="item" data-value="limpeza">
-                          <div class="ui green empty circular label"></div>
+                          <div class="ui orange empty circular label"></div>
                           Limpeza
                         </div>
                         <div class="item" data-value="padaria">
@@ -155,6 +156,7 @@
                 <div class="item">
                   <div class="ui multiple dropdown">
                     <input type="hidden" name="filters" value="pomar-brasilia">
+                    <i class="dropdown icon icon-filter"></i>
                     <span class="text multiple-session">Filtrar Marca</span>
                     <div class="menu">
                       <div class="ui icon search input">
@@ -216,7 +218,7 @@
       </div> <!-- End Vertical Menu -->
 
       <div class="twelve wide column">
-        <div class="ui three column grid products">          
+        <div class="ui three column grid products stackable">          
           <!-- Message -->
           <div class="ui message">
             <i class="close icon"></i>
