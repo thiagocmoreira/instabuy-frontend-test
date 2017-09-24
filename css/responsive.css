@@ -1,0 +1,47 @@
+/* Layout to Mobile */
+@media only screen and (max-width: 767px) {
+  /* Header */
+  .ui.dropdown.item.dropdown-menu {
+    display: none;
+  }
+
+  .ui.breadcrumb {
+    margin: 0 auto;
+  }
+
+  /* Vertical Menu */
+  .ui.vertical.menu.inverted.vertical-menu-pos {
+    width: 300px !important;
+    margin: 0 auto;
+  }
+
+  .ui.vertical.menu.inverted.vertical-menu-pos item {
+    width: 300px !important;
+  }
+
+  .place-search, .login-name, .search-menu {
+    display: none !important;
+  }
+
+  .text.multiple-session {
+    width: 100px !important;
+  }
+
+  /* Message */
+  .ui.message {
+    margin-top: 30px !important;
+    margin: 0 auto;
+    width: 300px !important;
+  }
+
+  /* Products */
+  .ui.special.cards {
+    width: 300px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Footer */
+  .ui.inverted.vertical.footer.segment {
+    margin-top: 40px !important;
+  }
+}
