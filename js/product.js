@@ -1,3 +1,4 @@
+// Create Card to put the products
 function createCard(product) {
   html = $('<div class="column">')
     .append($('<div class="ui special cards">')
@@ -16,7 +17,7 @@ function createCard(product) {
     .append('Feira')))
     .append('<img class="get-image" src="' + product.image + '">'))
 
-    .append($('<div class="content">')
+    .append($('<div class="content card-content">')
     .append($('<a class="header get-name">' + product.name + '</a>'))        
     .append($('<div class="meta">')
     .append($('<span class="date get-brand">' + product.brand + '</span>')))
@@ -31,6 +32,7 @@ function createCard(product) {
     refreshAnimations()
 }
 
+// Update the animations of the elements
 function refreshAnimations() {
   $('.ui.rating').rating()
 
@@ -40,6 +42,15 @@ function refreshAnimations() {
   })
 }
 
+// Put message on the html element
+function populateMessage(message) {
+  console.log(message[0].value)
+  document.querySelector('.message-title').innerHTML = message[0].key
+  document.querySelector('.message-body').innerHTML = message[0].value
+
+}
+
+// Put products on the cards
 function populateCards(products) {
   for(let product of products) {
     let newProduct = {
